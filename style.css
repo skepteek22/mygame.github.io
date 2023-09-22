@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+
+body{
+    background-color: rgb(155, 193, 242);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.wrapper{
+    height: 520px;
+    width: 520px;
+    min-width: 520px;
+    min-height: 520px;
+    background-color: rgb(210, 217, 89);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 16px;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.input{
+    margin-top: 100px;
+    padding-left: 5.2px;
+}
+
+input{
+    background-color: rgb(242, 243, 245);
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 24px;
+    position: relative;
+    margin-top: 100px;
+    padding-left: 5.2px;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+.name {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    white-space: nowrap;
+    font-family: 'Poppins';
+}
+
+
+::placeholder{
+    text-align: center;
+}
+
+.words-box{
+    height: 120px;
+    width: 280px;
+    background-color: rgb(115, 186, 108);
+    border-radius: 25px;
+    color: rgb(245, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    margin-left: 8px;
+    font-family: "Poppins";
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    margin-bottom: 120px;
+}
+
+.timer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px;
+    width: 1px;
+    margin-right: 115px;
+    margin-top: 1.5;
+    color: rgb(61, 58, 58);
+    font-family: 'Poppins';
+    transition: color 0.5s, font-size 0.5s;    
+}
+
+
+.orange {
+    color: rgb(211, 154, 9);
+  }
+  
+.red {
+    color: rgb(227, 12, 12);
+  }
+
+.normal{
+  color: rgb(232, 240, 252);
+}
+
+  @keyframes jumpAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .jump {
+    animation: jumpAnimation 0.5s infinite;
+  }
+
+#start{
+    position: absolute;
+    margin-top: 200px;
+    border: none;
+    outline: none;
+    height: 55px;
+    width: 164px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: 450;
+    background-color: rgb(159, 237, 160);
+    color: rgba(0, 0, 0, 0.9);
+    
+}
+
+
+#start:active{
+    background-color: rgb(179, 201, 179);
+}
+
+#stop{
+    position: absolute;
+    top: 0;
+    margin: 9px 245px 0 0;
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 75px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: rgb(212, 82, 59);
+    font-family: 'Poppins';
+    font-weight: 450;
+}
+
+#stop:active{
+    background-color: rgb(199, 117, 107);
+}   
+
+
+.hidden {
+    display: none;
+  }
+
+
+ #text-timer{
+    font-size: 24px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    margin: 7.5px 45px 0px 230px;
+    color: rgb(61, 58, 58);
+    font-weight: bold;
+    font-family: "Poppins";
+ } 
+
+
+ #refresh{
+    position: absolute;
+    top: 0;
+    margin: 9px 245px 0 0;
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 75px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: 450;
+    background-color: rgb(219, 103, 31);
+ }
+
+ #refresh:active{
+    background-color: rgb(207, 143, 103);
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .popup {
+  position: fixed;
+  top: -200px;
+  right: 0;
+  width: 135px;
+  background-color: rgb(179, 144, 240);
+  padding: 20px;
+  transition: top 0.5s;
+  margin-right: 140px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.popup-content {
+  position: relative;
+  font-size: 20px;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
